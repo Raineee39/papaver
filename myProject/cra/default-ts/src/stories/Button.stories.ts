@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { fn } from "@storybook/test";
 import { Button } from "./Button";
+import { url } from "inspector";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
@@ -32,6 +33,12 @@ export const Primary: Story = {
   args: {
     primary: true,
     label: "Button",
+  },
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/design/XSpk2L7ZrA3Wj7Y1oBx820/Relume-Library-Figma-Kit-(v1.11)---edited-color-palettes?node-id=3480-7762&t=wYvEv50Jgafa8XlO-1",
+    },
   },
 };
 
